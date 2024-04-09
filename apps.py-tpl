@@ -1,0 +1,19 @@
+"""App config for `{{ app_name }}` app."""
+
+# For details on app configs, see:
+# https://docs.djangoproject.com/en/3.2/ref/applications/
+
+from django.apps import AppConfig
+
+
+class {{ camel_case_app_name }}Config(AppConfig):
+    """App config for {{ app_name }}."""
+
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "{{ app_name }}"
+
+    def ready(self):
+        """Ready method for `{{ app_name }}` app startup."""
+        # Import signals module to wire up our signal receivers.
+        # https://docs.djangoproject.com/en/3.2/topics/signals/#connecting-receiver-functions
+        from . import signals

@@ -1,0 +1,5 @@
+"""Views for `{{ app_name }}` app."""
+
+from django.shortcuts import render
+
+# TODO: fill in template details for best-practice with Class-Based Views.
